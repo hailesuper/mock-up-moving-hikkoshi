@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="93d1ab6d-0049-4c83-a1f0-fd058c34526c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../chichi-main/chichi-main/.idea/chichi-main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chichi-main/chichi-main/src/store/package/packageSlice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-redux-toolkiy.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-redux-toolkiy/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-redux-toolkiy/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-redux-toolkiy/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-redux-toolkiy/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-redux-toolkiy/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-redux-toolkiy/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-redux-toolkiy/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-redux-toolkiy/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-redux-toolkiy/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-redux-toolkiy/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-redux-toolkiy/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-redux-toolkiy/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-redux-toolkiy/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-redux-toolkiy/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-redux-toolkiy/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-redux-toolkiy/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-redux-toolkiy/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-redux-toolkiy/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-redux-toolkiy/src/components/home.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-redux-toolkiy/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-redux-toolkiy/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-redux-toolkiy/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-redux-toolkiy/src/reportWebVitals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-redux-toolkiy/src/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-redux-toolkiy/src/store/number/numberSlice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-redux-toolkiy/src/store/rootReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-redux-toolkiy/src/store/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-redux.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reportWebVitals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/rootReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/value/valueSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/final/frontend-hikkoshi" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/final/frontend-hikkoshi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end/final/moving-service-front-end" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end/final/moving-service-front-end" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GaR4WBayV63nPgSdTnXVCTALhQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="RunManager" selected="npm.npm start">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="93d1ab6d-0049-4c83-a1f0-fd058c34526c" name="Changes" comment="" />
+      <created>1666624518258</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666624518258</updated>
+      <workItem from="1666624519781" duration="2448000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
