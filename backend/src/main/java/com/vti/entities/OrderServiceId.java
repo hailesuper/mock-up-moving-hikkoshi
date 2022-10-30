@@ -1,11 +1,14 @@
 package com.vti.entities;
 
+import lombok.Data;
+
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
 import java.io.Serializable;
 
 @Embeddable
-public class OrderServicePK implements Serializable {
+@Data
+public class OrderServiceId implements Serializable {
     @Column(name = "order_id")
     private int orderId;
 
@@ -14,11 +17,11 @@ public class OrderServicePK implements Serializable {
 
     // Constructor
 
-    public OrderServicePK(int orderId, short serviceId) {
+    public OrderServiceId(int orderId, short serviceId) {
         this.orderId = orderId;
         this.serviceId = serviceId;
     }
 
-    public OrderServicePK() {
+    public OrderServiceId() {
     }
 }
