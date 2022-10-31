@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS plans (
 	PRIMARY KEY (id), 	
 	id 				TINYINT UNSIGNED AUTO_INCREMENT,
     plan_name		VARCHAR(250) NOT NULL,
-    price			SMALLINT UNSIGNED NOT NULL 
+    price			INT UNSIGNED NOT NULL 
 );
 
 -- Create table user
@@ -18,7 +18,8 @@ DROP TABLE IF EXISTS users;
 CREATE TABLE IF NOT EXISTS users ( 	
 	PRIMARY KEY (id), 	
 	id 				INT UNSIGNED AUTO_INCREMENT,
-	`email` 		CHAR(250) NOT NULL UNIQUE CHECK (LENGTH(`email`) >= 6 ),
+	`email` 		CHAR(250) NOT NULL CHECK (LENGTH(`email`) >= 6 ),
+    phone			VARCHAR(250) NOT NULL,
 	`password` 		VARCHAR(500) NOT NULL,
     `full_name` 	VARCHAR(250) NOT NULL,
     `role` 			ENUM('ADMIN','CUSTOMER','STAFF') DEFAULT 'CUSTOMER',
@@ -36,10 +37,10 @@ CREATE TABLE IF NOT EXISTS orders (
     customer_id		INT UNSIGNED NOT NULL,
     is_has_apartment_already TINYINT DEFAULT 0, -- 0 : khach hang CHUA chon duoc nha
     distance		SMALLINT UNSIGNED NOT NULL , -- Don vi tinh la km
-    payment_status	ENUM('UNPAID','PAID')  DEFAULT 'UNPAID',
+    payment_status	TINYINT DEFAULT 0,
     payment_details	VARCHAR(255) ,  -- Phuong thuc thanh toan cua khach hang
     payment_date	DATE ,			
-	`status`		TINYINT UNSIGNED	, -- trang thai cua don hang tinh theo % 
+	`status`		TINYINT UNSIGNED DEFAULT 0 	, -- trang thai cua don hang tinh theo % 
     created_date	DATE DEFAULT (CURRENT_DATE),
 	FOREIGN KEY (plan_id) REFERENCES plans (id),
     FOREIGN KEY (customer_id)	REFERENCES users (id)
@@ -50,7 +51,8 @@ CREATE TABLE IF NOT EXISTS services (
 	PRIMARY KEY (id), 
 	id 				TINYINT UNSIGNED AUTO_INCREMENT,
     service_content	VARCHAR(250) NOT NULL,
-    service_weight	TINYINT UNSIGNED NOT NULL  , 
+    service_weight	TINYINT UNSIGNED NOT NULL,
+    service_time TINYINT UNSIGNED NOT NULL, -- (unit: days -- thoi gian can thiet de thuc hien dich vu)
     required		TINYINT DEFAULT 0  -- 1 : cho nhung khach hang CHUA chon duoc nha, 
 );
 
@@ -95,6 +97,56 @@ CREATE TABLE IF NOT EXISTS `Reset_Password_Token` (
 	`user_id` 		SMALLINT UNSIGNED NOT NULL,
 	`expiryDate` 	DATETIME NOT NULL
 );
+
+-- Insert in to plans:
+insert into plans (plan_name, price) values ('GOI A', 1000);
+insert into plans (plan_name, price) values ('GOI B', 2500);
+insert into plans (plan_name, price) values ('GOI C', 100000);
+
+-- Insert in to services:
+insert into services (service_content, service_weight, required, service_time) values ('Tìm nhà', 10, 0, 50);
+insert into services (service_content, service_weight, required, service_time) values ('Ký hợp đồng thuê nhà', 2, 0, 15);
+insert into services (service_content, service_weight, required, service_time) values ('Cắt hợp đồng nhà', 3, 1, 35);
+insert into services (service_content, service_weight, required, service_time) values ('Cắt hợp đồng điện, nước, ga, internet', 4, 1, 10);
+insert into services (service_content, service_weight, required, service_time) values ('Thông báo chuyển ra khỏi tỉnh/thành phố 
+hiện tại ', 5, 1, 7);
+insert into services (service_content, service_weight, required, service_time) values ('Thủ tục yêu cầu chuyển đồ đến địa chỉ 
+mới', 6, 1, 10);
+insert into services (service_content, service_weight, required, service_time) values ('Thủ tục thay đổi địa chỉ ', 7, 1, 7);
+insert into services (service_content, service_weight, required, service_time) values ('Thủ tục vứt những đồ không dùng nữa: ', 8, 1, 20);
+insert into services (service_content, service_weight, required, service_time) values ('Dọn dẹp nhà cửa, Chuyển đồ', 9, 1, 30);
+
+
+insert into plan_services (plan_id, service_id) values (1, 1);
+insert into plan_services (plan_id, service_id) values (1, 2);
+insert into plan_services (plan_id, service_id) values (1, 3);
+insert into plan_services (plan_id, service_id) values (1, 4);
+insert into plan_services (plan_id, service_id) values (1, 5);
+insert into plan_services (plan_id, service_id) values (1, 6);
+insert into plan_services (plan_id, service_id) values (1, 7);
+insert into plan_services (plan_id, service_id) values (1, 8);
+insert into plan_services (plan_id, service_id) values (1, 9);
+
+insert into plan_services (plan_id, service_id) values (2, 1);
+insert into plan_services (plan_id, service_id) values (2, 2);
+insert into plan_services (plan_id, service_id) values (2, 3);
+insert into plan_services (plan_id, service_id) values (2, 4);
+insert into plan_services (plan_id, service_id) values (2, 5);
+insert into plan_services (plan_id, service_id) values (2, 6);
+insert into plan_services (plan_id, service_id) values (2, 7);
+insert into plan_services (plan_id, service_id) values (2, 8);
+insert into plan_services (plan_id, service_id) values (2, 9);
+
+insert into plan_services (plan_id, service_id) values (3, 1);
+insert into plan_services (plan_id, service_id) values (3, 2);
+insert into plan_services (plan_id, service_id) values (3, 3);
+insert into plan_services (plan_id, service_id) values (3, 4);
+insert into plan_services (plan_id, service_id) values (3, 5);
+insert into plan_services (plan_id, service_id) values (3, 6);
+insert into plan_services (plan_id, service_id) values (3, 7);
+insert into plan_services (plan_id, service_id) values (3, 8);
+insert into plan_services (plan_id, service_id) values (3, 9);
+
 
 
 
